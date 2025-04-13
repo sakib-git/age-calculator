@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/poppins-v22-latin-800italic.woff2);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/poppins-v22-latin-700.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/poppins-v22-latin-regular.woff2);
+    font-weight: 400;
+}
+
+
+
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Lightred: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #f0f0f0;
+    padding-block: 4rem;
+}
+
+main {
+    max-width: 842px;
+    background-color: #fff;
+    margin-inline: auto;
+    padding: 20px;
+    border-radius: 20px 20px 160px 20px;
+}
+
+.container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    max-width: 550px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    letter-spacing: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: #0000006c;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    max-width: 160px;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    border: 1px solid #0000003d;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+input:focus,
+input:focus-visible{
+    border: 1px solid var(--Purple);
+}
+
+.btn-div {
+    position: relative;
+}
+
+button {
+    border: none;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--Offblack);
+    }
+}
+
+h1 {
+    font-size: clamp(1.2rem, 0.0103rem + 5.0759vw, 3.5rem);
+    font-weight: 800;
+}
+
+.yearresult,
+.dayresult,
+.monthresult {
+    color: var(--Purple);
+}
+
+.error2 {
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: 400;
+    color: var(--Lightred);
+    display: none;
+}
+
+.errortext {
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: 400;
+    color: var(--Lightred);
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.error {
+    color: red;
+}
+
+.border {
+    border: 1px solid var(--Lightred);
+}
+
+@media (width < 600px) {
+    main{
+        margin-top: 200px;
+    }
+}

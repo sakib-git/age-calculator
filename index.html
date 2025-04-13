@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container">
+
+      <div class="inputs">
+        <label for="day" class="dmy">DAY</label>
+        <input type="number" placeholder="DD" id="day" class="inputall">
+        <span class="errortext">This field is required</span>
+        <span class="error2">Must be a valid day</span>
+      </div>
+
+      <div class="inputs">
+        <label for="month" class="dmy">MONTH</label>
+        <input type="number" placeholder="MM" id="month" class="inputall">
+        <span class="errortext">This field is required</span>
+        <span class="error2">Must be a valid month</span>
+      </div>
+
+      <div class="inputs">
+        <label for="year" class="dmy"> YEAR</label>
+        <input type="number" placeholder="YYYY" id="year" class="inputall">
+        <span class="errortext">This field is required</span>
+        <span class="error2">Must be in the past</span>
+      </div>
+
+    </div>
+    <hr>
+    <div class="btn-div">
+      <button class="btn" aria-label="arrow button"><img src="assets/images/icon-arrow.svg" alt=""></button>
+
+    </div>
+    <div class="result-container">
+      <h1><span class="yearresult">--</span> years</h1>
+      <h1><span class="monthresult">--</span> months</h1>
+      <h1><span class="dayresult">--</span> days</h1>
+    </div>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
